@@ -1,0 +1,14 @@
+1. git init - 깃허브 초기화
+2. git config user.name "user1"  - 사용자추가
+3. git config user.email "aaa@aaa1.com"  -이메일추가
+4. git config --list
+5. git config user.name  -  사용자확인
+6. git config user.email  - 이메일확인
+7. git status - 파일 상태확인
+8. git add test.js - 파일 스테이징 상태
+9. git status 저장소 파일 상태 출력
+10.git log : 저장소 커밋 히스토리 출력
+    - git log -p : 상세정보출력
+
+
+ 
