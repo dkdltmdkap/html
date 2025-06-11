@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.wrap {
+    width: 100%;
+    height: 100vh;
+}
+.wrap h1 {
+    padding: 30px;
+    text-align: center;
+}
+.wrap .box {
+    width: 1400px;
+    height: 550px;
+    background-color: lightgreen;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.box img {
+    width: 150px;
+    height: 150px;
+}
+.box #front_coin {
+    display: block;
+}
+.box #back_coin {
+    display: none;
+}
+.clickBtns {
+    width: 200px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px auto;
+}
+.clickBtns button {
+    width: 80px;
+    height: 80px;
+    background-color: lightgray;
+    color: black;
+    border: none;
+    border-radius: 50%;
+}
+.wrap .btns {
+    width: 150px;
+    margin: auto;
+    background-color: red;
+    text-align: center;
+}
+.btns button {
+    width: 150px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    border: none;
+    margin-top: 20px;
+}
+.btns #start_btn {
+    display: block;
+}
+.btns #replay_btn {
+    display: none;
+}
+.wrap .result {
+    width: 150px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.spin {
+    animation: spin 1s ease-out;
+}
+@keyframes spin {
+    0% {
+        transform: translateY(-300px) rotateX(0deg);
+    }
+    30% {
+        transform: translateY(-100px) rotateX(1080deg);
+    }
+    60% {
+        transform: translateY(0px) rotateX(360deg);
+    }
+    100% {
+        transform: translateY(10px) rotateX(0);
+    }
+}
