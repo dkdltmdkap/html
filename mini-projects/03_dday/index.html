@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <title>D-day 구하기</title>
+    <link rel="stylesheet" href="style.css" media="(max-width:1920px) and (min-width:1080px)">
+    <link rel="stylesheet" href="web.css" media="(max-width:1080px) and (min-width:600px)">
+    <link rel="stylesheet" href="m.css" media="(max-width:600px) and (min-width:340px)">
+    <script src="index.js" defer></script>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="top_bar">
+            <ul>
+                <li id="time"></li>
+                <li>
+                    <img src="images/missed-call.png" alt="부재중 전화">
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <img src="images/signal.png" alt="통신">
+                </li>
+                <li>
+                    <img src="images/wi-fi.png" alt="와이파이">
+                </li>
+                <li>
+                    <img src="images/battery.png" alt="배터리">
+                </li>
+            </ul>
+        </div>
+
+        <header>
+            <div class="menu_bar">
+                <ul class="nav">
+                    <li id="menu">
+                        <ul class="menubar">
+                            <img src="images/menu.png" alt="메뉴바">
+                        </ul>
+
+                        <ul class="menuList">
+                            <li>
+                                <a href="#">
+                                    <img src="images/confetti.png" alt="기념일">기념일
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="images/schedule.png" alt="날짜 계산">날짜 계산
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="images/web-settings.png" alt="앱 설정">앱 설정
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <ul class="nav2">
+                    <li id="playlist">
+                        <div class="all">
+                            <div class="play">
+                                <img src="images/playlist.png" alt="플레이리스트 추가">
+                            </div>
+                            <div class="edit">
+                                <img src="images/edit.png" alt="수정">
+                            </div>
+                            <div class="etc">
+                                <img src="images/etc.png" alt="기타...">
+                            </div>
+                        </div>
+                    </li>
+
+                    <div class="playlist_menu">
+                        <ul>
+                            <li>
+                                <a href="">배경음악 설정</a>
+                                <img src="images/music-library.png" alt="">
+                            </li>
+                            <li>
+                                <a href="">배경음악 사용</a>
+                                <img src="images/playlist.png" alt="버튼">
+                            </li>
+                            <li>
+                                <a href="">배경음악 선택</a>
+                                <img src="images/music-playlist.png" alt="">
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="edit_menu">
+                        <div class="text">
+                            <h4>기념일 종류를 선택하세요</h4>
+                        </div>
+                        <div class="imgs">
+                            <ul>
+                                <li>
+                                    <img src="images/couple.png" alt="커플">커플
+                                </li>
+                                <li>
+                                    <img src="images/birthday-cake.png" alt="생일">생일
+                                </li>
+                                <li>
+                                    <img src="images/wedding.png" alt="결혼 기념일">결혼 기념일
+                                </li>
+                                <li>
+                                    <img src="images/basic.png" alt="기본 기념일">기본 기념일
+                                </li>
+                                <li>
+                                    <img src="images/dog.png" alt="강아지 생일">강아지 생일
+                                </li>
+                                <li>
+                                    <img src="images/cat.png" alt="고양이 생일">고양이 생일
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <li class="etc_menu">
+                        <!-- 아래에서 반정도 올라오면서도 보여주는 기능 만들기 -->
+                        <ul>
+                            <li>
+                                <img src="images/heart.png" alt="하트">
+                                사랑한지
+                            </li>
+                            <li>
+                                <img src="images/pencil.png" alt="펜">
+                                기념일 수정
+                            </li>
+                            <li>
+                                <img src="images/share.png" alt="공유">
+                                기념일 공유
+                            </li>
+                            <li>
+                                <img src="images/send.png" alt="보내기">
+                                기념일 보내기
+                            </li>
+                            <li>
+                                <img src="images/remove.png" alt="휴지통">
+                                기념일 삭제
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </header>
+
+        <main>
+            <div class="test">
+                <h1>현재 날짜</h1>
+                <h4></h4>
+            </div>
+            <div class="test2">
+                <div class="group">
+                    <input type="date" name="" id="date">
+                    <button id="btn">저장</button>
+                </div>
+                <h3></h3>
+                <h1></h1>
+            </div>
+        </main>
+
+        <footer>
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="images/favorite-chat-message.png" alt="톡">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/address.png" alt="현재위치or다녀온곳">
+                    </a>
+                </li>
+                <li>
+                    <a href="home.html">
+                        <img src="images/home.png" alt="홈">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/share.png" alt="공유">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/settings.png" alt="관리">
+                    </a>
+                </li>
+            </ul>
+        </footer>
+    </div>
+</body>
+
+</html>
