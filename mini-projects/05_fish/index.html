@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <title>물고기 움직이기</title>
+    <link rel="stylesheet" href="style.css" media="(min-width:1400px)">
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <div class="wrap">
+        <div class="wave1"></div>
+        <div class="wave2"></div>
+        <img src="img/물고기.svg" alt="">
+    </div>
+
+    <div class="moves">
+        <button id="leftBtn">
+            <input type="text" id="leftMove">
+            <p>만큼 오른쪽으로 움직이기</p>
+        </button>
+        <button id="topBtn">
+            <input type="text" id="topMove">
+            <p>만큼 위쪽으로 움직이기</p>
+        </button>
+        <button id="btn2">물고기 움직이기</button>
+
+        <div class="arr">
+            <p>
+                <img src="img/arrow-up-solid.svg" alt="위">
+            </p>
+            <p>
+                <img src="img/arrow-up-solid.svg" alt="아래">
+            </p>
+            <p>
+                <img src="img/arrow-right-solid.svg" alt="왼쪽">
+            </p>
+            <p>
+                <img src="img/arrow-right-solid.svg" alt="오른쪽">
+            </p>
+        </div>
+
+        <button id="btn3">리셋</button>
+    </div>
+</body>
+</html>
