@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>적정 체중을 구하는 테스트기 만들기</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="weight.js" defer></script>
+</head>
+<body>
+    <div class="wrap">
+        <h1>몸무게 측정</h1>
+        <div class="form">
+            <div class="name_form">
+                <label for="name">이름 : </label>
+                <input type="text" name="" id="name">
+            </div>
+
+            <div class="heightForm">
+                <label for="height">신장 : </label>
+                <input type="text" name="" id="height">
+            </div>
+
+            <div class="weightForm">
+                <label for="weight">체중 : </label>
+                <input type="text" name="" id="weight">
+            </div>
+
+            <!-- 적정 체중 -->
+            <div class="normal_form"></div>
+
+            <!-- 초과 체중 -->
+            <div class="excess_weight_form"></div>
+
+            <!-- 결과 -->
+            <div class="texture_form"></div>
+
+            <button id="btn">제출</button>
+            <button id="replay">다시하기</button>
+        </div>
+    </div>
+</body>
+</html>
