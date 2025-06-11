@@ -1,0 +1,200 @@
+main {
+    width: 90%;
+    height: 400px;
+    background-color: whitesmoke;
+    margin: 40px auto;
+    display: flex;
+    justify-content: space-between;
+}
+.bookImg {
+    width: 22%;
+}
+.bookImg #bookImg {
+    margin: 62px;
+    margin-bottom: 40px;
+}
+.bookImg #seeBtn {
+    width: 120px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: bold;
+    margin: auto;
+}
+.book_descriptions {
+    width: 76%;
+}
+.book_descriptions .wrap {
+    display: flex;
+}
+.wrap .featured,
+.wrap .event,
+.wrap .gifts {
+    width: 80px;
+    height: 28px;
+    border: 1px solid lightgrey;
+    background-color: white;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    margin-right: 4px;
+}
+.wrap .bookTitles {
+    padding: 10px;
+    padding-left: 0;
+}
+.bookTitles span {
+    font-size: 18px;
+    font-weight: bold;
+}
+.wrap .hardcover {
+    padding-top: 12px;
+    color: blue;
+}
+.wrap .copyImg img {
+    width: 20px;
+    height: 20px;
+    margin-top: 14px;
+    margin-left: 10px;
+}
+.wrap .author {
+    position: relative;
+}
+.wrap .author span {
+    color: lightgray;
+}
+.wrap .author::before {
+    content: '';
+    width: 1px;
+    height: 16px;
+    background-color: lightgray;
+    position: absolute;
+    top: 4px;
+    left: 240px;
+}
+.wrap .author::after {
+    content: '';
+    width: 1px;
+    height: 16px;
+    background-color: lightgray;
+    position: absolute;
+    top: 4px;
+    left: 320px;
+}
+.wrap .openBooks {
+    margin-top: 0;
+    margin-left: 20px;
+}
+.wrap .date {
+    margin-left: 24px;
+}
+.wrap .price span {
+    font-size: 22px;
+    font-weight: bold;
+    margin-right: 4px;
+}
+.wrap .discount {
+    margin-top: 7px;
+    margin-left: 10px;
+}
+.wrap .pointImg img {
+    width: 20px;
+    height: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.wrap .point {
+    margin-top: 7px;
+    margin-left: 8px;
+}
+
+.wrap .sales {
+    margin-top: 10px;
+    position: relative;
+}
+.wrap .sales::before {
+    content: '';
+    width: 1px;
+    height: 16px;
+    background-color: lightgray;
+    position: absolute;
+    top: 5px;
+    left: 120px;
+}
+.wrap .review {
+    margin-top: 10px;
+    margin-left: 16px;
+}
+.wrap .starImg img {
+    width: 22px;
+    height: 22px;
+    margin-top: 12px;
+}
+.wrap .starImg img:first-child {
+    margin-left: 6px;
+}
+.wrap .star_num {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 7px;
+    margin-right: 6px;
+    margin-left: 4px;
+}
+.wrap #starSlide {
+    width: 20px;
+    height: 20px;
+    margin-top: 12px;
+}
+.wrap .orders {
+    margin-top: 16px;
+    font-size: 16px;
+    font-weight: 500;
+}
+.wrap .tag {
+    width: 160px;
+    height: 32px;
+    background-color: rgb(225, 225, 225);
+    border: 1px solid lightgray;
+    border-radius: 25px;
+    margin-right: 12px;
+    margin-left: 12px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.wrap .tag1 {
+    width: 190px;
+    margin-left: 0;
+}
+.wrap .tag4,
+.wrap .tag5 {
+    width: 120px;
+}
+.wrap .txt span {
+    color: lightgray;
+}
+.wrap .used_items {
+    margin-right: 4px;
+    position: relative;
+}
+.wrap .used_items::before {
+    content: '';
+    width: 1px;
+    height: 16px;
+    background-color: lightgray;
+    position: absolute;
+    top: 20px;
+    left: 110px;
+}
+.wrap .ebook {
+    margin-left: 16px;
+}
