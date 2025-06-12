@@ -20,9 +20,11 @@ $('#fullpage').fullpage({
     }
 });
 
-$('.d1').colorbox({ rel: 'gal' });
-$('.d1pop').colorbox({ iframe: true, innerWidth: 800, innerHeight: 600 });
-
-$('.win').on('click', () => {
-    window.open('./popup.html', 'popup', 'width=600, height=400');
-});
+// $('.d1').colorbox({ rel: 'gal' });
+$('.d1').colorbox({ iframe: true, innerWidth: 1240, innerHeight: 422 });
+$('.d2').colorbox({ iframe: true, innerWidth: 1840, innerHeight: 904 });
+$('.d3').colorbox({ iframe: true, innerWidth: 1075, innerHeight: 881 });
+$('.d4').colorbox({ iframe: true, innerWidth: 548, innerHeight: 573 });
+$('.d5').colorbox({ iframe: true, innerWidth: 1062, innerHeight: 796 });
+$('.d6').colorbox({ iframe: true, innerWidth: 582, innerHeight: 834 });
+$('.d7').colorbox({ iframe: true, innerWidth: 1393, innerHeight: 407 });
