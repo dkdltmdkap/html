@@ -68,12 +68,26 @@ a:visited {
     position: relative;
 }
 
+.section:nth-child(2)::before {
+    content: '';
+    width: 95%;
+    height: 90%;
+    background-color: rgba(255, 202, 202, .7);
+    position: absolute;
+    top: 95px;
+    left: 85px;
+    border-top-left-radius: 70px;
+}
+
 .section:nth-child(2) .fp-tableCell {
-    color: rgb(255, 255, 255);
     position: absolute;
     top: 56px;
     left: 120px;
     font-size: 26px;
+}
+
+.section:nth-child(2) h1 {
+    color: white;
 }
 
 .aboutMyself {
@@ -93,31 +107,111 @@ a:visited {
 .aboutMyself li:nth-child(1) {
     width: 27.8%;
     height: 100%;
-    background-color: rgba(0, 255, 0, 0.5);
+    background: url(img/myImg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     position: absolute;
     top: 0;
     left: 0;
 }
 
 .aboutMyself li:nth-child(2),
-.aboutMyself li:nth-child(3) {
+.aboutMyself .developerLogo {
     width: 35%;
     height: 100%;
-    background-color: rgba(255, 0, 0, 0.5);
     position: absolute;
     top: 0;
     left: 29%;
 }
 
-.aboutMyself li:nth-child(3) {
-    background-color: rgba(0, 0, 255, 0.5);
+.section:nth-child(2) .txt {
+    margin-top: 14px;
+    font-size: 15px;
+    line-height: 26px;
+}
+
+.txt span {
+    font-weight: 500;
+}
+
+.section:nth-child(2) {
+    display: flex;
+    flex-direction: row;
+}
+
+.section:nth-child(2) .developerLogo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* background-color: rgba(0, 0, 255, 0.5); */
     left: 65%;
 }
 
-/* .section:nth-child(3) */
-#fullpage .section:nth-child(3) {
-    /* background: url('img/design.jpg'); */
+.developerLogo img {
+    width: 80px;
+    height: 80px;
+    margin-top: 10px;
 }
+
+.section:nth-child(2) .graphs ul {
+    display: flex;
+    position: absolute;
+    top: 14px;
+    right: 14px;
+}
+
+.section:nth-child(2) #skills {
+    width: 450px;
+    height: 700px;
+    position: absolute;
+    top: 14px;
+    right: 14px;
+}
+
+.section:nth-child(2) .level {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #251B37;
+    margin-top: 5px;
+}
+
+.section:nth-child(2) .low {
+    position: absolute;
+    top: 0;
+    right: 400px;
+    text-align: center;
+    padding-right: 20px;
+    padding-left: 20px;
+    border-right: 1px solid black;
+}
+
+.section:nth-child(2) .medium {
+    position: absolute;
+    top: 0;
+    right: 270px;
+    text-align: center;
+    padding-right: 52px;
+    padding-left: 52px;
+    border-right: 1px solid black;
+}
+
+.section:nth-child(2) .high {
+    position: absolute;
+    top: 0;
+    right: 14px;
+    text-align: center;
+    padding-right: 116px;
+    padding-left: 116px;
+    border-right: 1px solid #251B37;
+}
+
+
+/* .section:nth-child(3) */
+/* #fullpage .section:nth-child(3) {
+    background: url('img/design.jpg');
+} */
 
 #fullpage .section:nth-child(3) .fp-tableCell {
     display: flex;
@@ -132,6 +226,14 @@ a:visited {
     top: 110px;
     left: 140px;
     font-size: 50px;
+}
+
+.section:nth-child(3) h3:nth-of-type(1) {
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 205px;
+    left: 140px;
+    font-size: 17px;
 }
 
 /* 이미지 */
@@ -184,6 +286,13 @@ a:visited {
     width: 90%;
     height: 90%;
     border: 1px solid #333;
+}
+
+.section:nth-child(3) a:nth-child(2) {
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
 }
 
 /* .section:nth-child(4) */
