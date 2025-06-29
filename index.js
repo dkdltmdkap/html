@@ -4,7 +4,7 @@ $('#fullpage').fullpage({
     menu: 'nav',
     autoScrolling: true,
     scrollHorizontally: true,
-    scrollOverflow: true, // ★ 이거 꼭 추가하세요!
+    scrollOverflow: true,
     navigation: true,
     navigationPositon: 'right',
     afterLoad: function (origin, destination, direction, trigger) {
@@ -52,7 +52,7 @@ $('#fullpage').fullpage({
 
             h1Span.forEach((span, i) => {
                 span.style.animation = 'none';
-                span.offsetHeight; // reflow
+                span.offsetHeight;
                 span.style.animation = `fadeUp 0.6s ease ${i * 0.1}s forwards`;
             });
 
@@ -132,7 +132,6 @@ function animateCircle(canvasId, targetPercent, color) {
             requestAnimationFrame(animate);
         }
     }
-
     animate();
 }
 
