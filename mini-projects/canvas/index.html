@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>canvas_매출현황</title>
+    <link rel="stylesheet" href="canvas.css">
+    <script src="total.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <div class="wrap">
+        <nav>
+            <h1>상품별 매출현황 보고서</h1>
+
+            <p>( 단위 ₩ )</p>
+        </nav>
+
+        <main>
+            <div class="sales">
+                <table>
+                    <tr>
+                        <th>상품명</th>
+                        <th>판매가</th>
+                        <th>판매량</th>
+                        <th>총판매액</th>
+                    </tr>
+                    <tr>
+                        <td>A</td>
+                        <td id="a_01">
+                            <input type="number" value="15000">
+                        </td>
+                        <td id="a_02">
+                            <input type="number" value="1253">
+                        </td>
+                        <td id="total_a">
+                            <p>18795000</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>B</td>
+                        <td id="b_01">
+                            <input type="number" value="16000">
+                        </td>
+                        <td id="b_02">
+                            <input type="number" value="1004">
+                        </td>
+                        <td id="total_b">
+                            <p>16064000</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>C</td>
+                        <td id="c_01">
+                            <input type="number" value="17500">
+                        </td>
+                        <td id="c_02">
+                            <input type="number" value="987">
+                        </td>
+                        <td id="total_c">
+                            <p>17272500</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>D</td>
+                        <td id="d_01">
+                            <input type="number" value="15500">
+                        </td>
+                        <td id="d_02">
+                            <input type="number" value="1352">
+                        </td>
+                        <td id="total_d">
+                            <p>20956000</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>E</td>
+                        <td id="e_01">
+                            <input type="number" value="16500">
+                        </td>
+                        <td id="e_02">
+                            <input type="number" value="726">
+                        </td>
+                        <td id="total_e">
+                            <p>11979000</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>F</td>
+                        <td id="f_01">
+                            <input type="number" value="17000">
+                        </td>
+                        <td id="f_02">
+                            <input type="number" value="876">
+                        </td>
+                        <td id="total_f">
+                            <p>14892000</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="sales_btns">
+                <button id="click">클릭해보세요</button>
+                <button id="reset">Reset</button>
+            </div>
+        </main>
+
+        <!-- 그래프가 그려질 canvas -->
+        <canvas id="salesChart" width="1000" height="600"></canvas>
+    </div>
+</body>
+
+</html>
