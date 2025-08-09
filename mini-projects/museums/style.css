@@ -1,0 +1,890 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a:link,
+a:visited {
+    color: #333;
+    text-decoration: none;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+
+.section {
+    width: 95%;
+    height: 100vh;
+    margin: auto;
+}
+
+/* fullpage */
+#fullpage {
+    width: 100%;
+}
+
+/* nav */
+#fullpage nav {
+    width: 100%;
+    height: 100vh;
+}
+
+/* navbar */
+nav .navbar {
+    width: 100%;
+    height: 40px;
+    display: flex;
+}
+
+.navbar ul {
+    width: 96%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.navbar li {
+    width: 8%;
+    text-align: center;
+    font-size: 15px;
+    border-top: 2px solid #000;
+    margin: 5px;
+}
+
+.navbar li:nth-child(4) {
+    width: 11%;
+    border: none;
+    position: relative;
+}
+
+.navbar li:nth-child(5) {
+    width: 6%;
+    border: none;
+    position: relative;
+}
+
+.navbar li:nth-child(4)::before {
+    content: '';
+    width: 150px;
+    height: 2px;
+    background-color: #000;
+    position: absolute;
+    top: 6px;
+}
+
+.navbar li:nth-child(5)::before {
+    content: '';
+    width: 80px;
+    height: 2px;
+    background-color: #000;
+    position: absolute;
+    top: 5.5px;
+}
+
+.navbar li:nth-child(4) #shortcut,
+.navbar li:nth-child(5) #lan {
+    width: 150px;
+    height: 32px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+.navbar li:nth-child(4) #shortcut {
+    margin-top: 5px;
+}
+
+.navbar li:nth-child(5) #lan {
+    width: 80px;
+    margin-top: 3px;
+}
+
+.navbar li:nth-child(4) #shortcut:hover,
+.navbar li:nth-child(5) #lan:hover {
+    height: 36px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background-color: #000;
+}
+
+.navbar li:nth-child(6) {
+    width: 14%;
+}
+
+.navbar li:nth-child(6) dl {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar li:nth-child(6) img {
+    width: 20px;
+    margin-bottom: -6px;
+}
+
+
+/* menubar */
+nav .menubar {
+    width: 100%;
+    height: 80px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.menubar ul {
+    width: 15%;
+    display: flex;
+}
+
+.menubar ul:nth-child(1) {
+    margin-left: 20px;
+}
+
+.menubar ul:nth-child(2) {
+    width: 60%;
+    justify-content: space-around;
+    margin-left: -60px;
+}
+
+.menubar ul:nth-child(2) li {
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.menubar ul:nth-child(3) {
+    width: 12%;
+    margin-right: 20px;
+    justify-content: space-between;
+}
+
+.menubar ul:nth-child(3) img {
+    width: 22px;
+}
+
+.information .information_sub,
+.exhibitions .exhibitions_sub,
+.collections .collections_sub,
+.research .research_sub,
+.news .news_sub,
+.about_museum .about_museum_sub {
+    width: 100%;
+    height: 38px;
+    display: none;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    background-color: #333;
+}
+
+.information_sub,
+.exhibitions_sub,
+.collections_sub,
+.research_sub,
+.news_sub,
+.about_museum_sub {
+    display: none;
+}
+
+.information:hover .information_sub,
+.exhibitions:hover .exhibitions_sub,
+.collections:hover .collections_sub,
+.research:hover .research_sub,
+.news:hover .news_sub,
+.about_museum:hover .about_museum_sub {
+    display: flex;
+}
+
+.information_sub dl,
+.exhibitions_sub dl,
+.collections_sub dl,
+.research_sub dl,
+.news_sub dl,
+.about_museum_sub dl {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    top: 50%;
+    left: 320px;
+    transform: translateY(-50%);
+}
+
+.exhibitions_sub dl,
+.collections_sub dl {
+    width: 80%;
+    left: 150px;
+}
+
+.research_sub dl {
+    width: 70%;
+    left: 350px;
+}
+
+.news_sub dl {
+    left: 500px;
+}
+
+.about_museum_sub dl {
+    width: 70%;
+    left: 400px;
+}
+
+.information_sub dd a,
+.exhibitions_sub dd a,
+.collections_sub dd a,
+.research_sub dd a,
+.news_sub dd a,
+.about_museum_sub dd a {
+    color: #fff;
+    font-size: 15px;
+    line-height: 40px;
+}
+
+/* slide */
+.fp-slides {
+    width: 90%;
+    margin: auto;
+}
+
+nav .slide {
+    width: 90%;
+    height: 475px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slide ul {
+    width: 900%;
+    display: flex;
+    transition: transform 0.8s ease-in-out;
+}
+
+.slide li {
+    width: 90%;
+}
+
+.slide img {
+    width: 1250px;
+    height: 450px;
+}
+
+/* hours_admission_fees */
+nav .hours_admission_fees {
+    width: 90%;
+    margin: auto;
+    position: relative;
+}
+
+.hours_admission_fees .hours {
+    width: 60%;
+    height: 50px;
+}
+
+.hours ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hours img {
+    width: 30px;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+
+/* admission */
+.hours_admission_fees .admission {
+    width: 35%;
+    height: 50px;
+    margin-left: 14px;
+}
+
+.admission ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.admission img {
+    width: 26px;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+.admission h2 {
+    margin-left: -120px;
+}
+
+.admission h4 {
+    margin-left: -120px;
+}
+
+.admission p {
+    margin-left: -180px;
+}
+
+/* directions */
+.hours_admission_fees .directions {
+    position: absolute;
+    top: 40px;
+    right: 150px;
+}
+
+.directions h1 {
+    color: rgb(80, 0, 80);
+}
+
+/* reservations */
+.hours_admission_fees .reservations {
+    position: absolute;
+    top: 40px;
+    right: 10px;
+}
+
+.reservations h1 {
+    color: rgb(80, 0, 80);
+}
+
+
+/* main */
+#fullpage main {
+    width: 90%;
+    height: 100vh;
+    margin: auto;
+}
+
+/* showcase */
+main .showcase {
+    width: 100%;
+    height: 100vh;
+}
+
+/* text_slide */
+.showcase .text_slide {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transition: transform 0.5s ease-in-out;
+}
+
+.text_slide h1 {
+    font-size: 44px;
+    margin-top: 40px;
+    margin-left: 10px;
+}
+
+/* left_right_slide */
+.text_slide .left_right_slide {
+    width: 10%;
+    position: relative;
+}
+
+.left_right_slide ul {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.left_right_slide li {
+    width: 30px;
+    position: absolute;
+    top: 80px;
+    right: 85px;
+}
+
+.left_right_slide li:nth-child(2) {
+    right: 55px;
+}
+
+.left_right_slide li:nth-child(3) {
+    right: 30px;
+}
+
+/* showcase_slide */
+.showcase .showcase_slide {
+    width: 1240px;
+    margin-top: 30px;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+
+.showcase_slide ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.showcase_slide li {
+    width: 312.5px;
+    padding-right: 10px;
+}
+
+.showcase_slide li a img {
+    width: 300px;
+    height: 450px;
+}
+
+.showcase_slide button {
+    width: 70px;
+    height: 32px;
+    border-radius: 5px;
+    outline: none;
+}
+
+.showcase_slide button:nth-child(1) {
+    border: none;
+    color: #fff;
+    background-color: #000;
+}
+
+.showcase_slide button:nth-child(2) {
+    border: none;
+    color: #000;
+    background-color: #fff;
+}
+
+.showcase_slide h5 {
+    margin-top: 15px;
+}
+
+.showcase_slide p {
+    margin-top: 10px;
+    font-size: 13px;
+    color: #808080;
+}
+
+main {
+    height: 100vh;
+}
+
+/* notice */
+main .notice {
+    width: 100%;
+    height: 350px;
+    /* height: 100vh; */
+}
+
+/* text_notice */
+.notice .text_notice {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.text_notice img {
+    width: 60px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.text_notice h1 {
+    font-size: 44px;
+    margin-top: 10px;
+    margin-left: 8px;
+}
+
+/* notices_title_list */
+.notice .notices_title_list {
+    width: 50%;
+    height: 290px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 10px;
+    position: relative;
+}
+
+/* noitce_title */
+.notices_title_list .noitce_title {
+    width: 100%;
+    height: 50px;
+    margin-top: 20px;
+    display: flex;
+}
+
+/* notices_title, announcements_title, careers_title, pressreleases_title */
+.noitce_title .notices_title {
+    width: 20%;
+    text-align: center;
+    border-bottom: 2px solid #000;
+}
+
+.noitce_title .announcements_title,
+.noitce_title .careers_title,
+.noitce_title .pressreleases_title {
+    width: 24%;
+    text-align: center;
+    border-bottom: 2px solid #000;
+}
+
+.notices_title h1,
+.announcements_title h1,
+.careers_title h1,
+.pressreleases_title h1 {
+    font-weight: 400;
+    text-align: center;
+    color: #808080;
+}
+
+/* notice_list */
+.notices_title_list .notice_list {
+    width: 100%;
+}
+
+.notice_list ul:nth-child(2n-1) {
+    list-style: disc;
+}
+
+.notice_list ul:nth-child(2n) {
+    list-style: none;
+}
+
+.notice_list span {
+    color: #808080;
+}
+
+/* notices, announcements, carrers, pressreleases */
+.notice_list .notices,
+.notice_list .announcements,
+.notice_list .carrers,
+.notice_list .pressreleases {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.notices .notices_list,
+.announcements .announcements_list,
+.carrers .carrers_list,
+.pressreleases .pressreleases_list {
+    margin: 10px;
+    margin-left: 20px;
+    line-height: 32px;
+}
+
+.announcements .announcements_list,
+.carrers .carrers_list,
+.pressreleases .pressreleases_list {
+    display: none;
+}
+
+.notices .notices_date,
+.announcements .announcements_date,
+.carrers .carrers_date,
+.pressreleases .pressreleases_date {
+    line-height: 32px;
+    display: flex;
+    flex-direction: column;
+}
+
+.announcements .announcements_date,
+.carrers .carrers_date,
+.pressreleases .pressreleases_date {
+    display: none;
+}
+
+/* imgSlide */
+.notices_title_list .imgSlide {
+    width: 73%;
+    height: 250px;
+    position: absolute;
+    top: 6px;
+    left: 740px;
+    overflow: hidden;
+}
+
+.imgSlide ul {
+    width: 300%;
+    display: flex;
+    animation: slide 9s steps(3) infinite;
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.imgSlide li {
+    width: 33.3%;
+}
+
+.imgSlide img {
+    width: 450px;
+    height: 250px;
+}
+
+
+/* eeo */
+main .eeo {
+    width: 100%;
+    height: 420px;
+    /* height: 100vh; */
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+/* education */
+.eeo .education {
+    width: 30%;
+    text-align: left;
+    margin-right: 40px;
+    margin-left: 10px;
+}
+
+.education img {
+    border: 2px solid #000;
+    margin-top: 10px;
+}
+
+/* events */
+.eeo .events {
+    width: 24%;
+    text-align: left;
+}
+
+/* events_title */
+.events .events_title {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.events_title ul {
+    width: 10%;
+    display: flex;
+}
+
+/* event_imgs */
+.event_imgs ul:nth-child(1) {
+    width: 100%;
+}
+
+.event_imgs ul:nth-child(2) {
+    display: none;
+}
+
+.event_imgs img {
+    width: 290px;
+    height: 240px;
+    margin-top: 10px;
+}
+
+/* online_exhibition_hall */
+.eeo .online_exhibition_hall {
+    width: 46%;
+    height: 400px;
+    margin-left: 40px;
+    text-align: left;
+}
+
+.online_exhibition_hall .background {
+    width: 450px;
+    height: 240px;
+    margin-top: 10px;
+    background-color: lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* footer */
+footer {
+    width: 100%;
+    height: 680px;
+    position: relative;
+}
+
+footer::before {
+    content: '';
+    width: 95%;
+    height: 1px;
+    background-color: #000;
+    position: absolute;
+    top: 20px;
+    left: 30px;
+}
+
+footer::after {
+    content: '';
+    width: 95%;
+    height: 1px;
+    background-color: #000;
+    position: absolute;
+    top: 400px;
+    left: 30px;
+}
+
+footer .aside {
+    width: 100%;
+    height: 350px;
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.aside div {
+    width: 170px;
+    line-height: 28px;
+}
+
+.aside ul {
+    margin-top: 20px;
+}
+
+.aside li {
+    font-size: 14px;
+}
+
+.aside .footer_visitor_information {
+    margin-left: 40px;
+}
+
+.aside .footer_education {
+    width: 110px;
+}
+
+.aside .footer_list {
+    margin-top: 24px;
+    margin-left: 20px;
+    font-weight: bold;
+    line-height: 28px;
+}
+
+
+/* footer_bottom */
+footer .footer_bottom {
+    width: 95%;
+    height: 300px;
+    margin: auto;
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer_bottom .footer_left {
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 40px;
+}
+
+/* footer__links */
+.footer_left .footer__links {
+    width: 30%;
+    font-weight: bold;
+    line-height: 28px;
+}
+
+/* footer_go */
+.footer_left .footer_go {
+    width: 30%;
+}
+
+.footer_go select {
+    width: 150px;
+    height: 50px;
+    border: none;
+    border-bottom: 2px solid #000;
+    background-color: transparent;
+    outline: none;
+}
+
+.footer_go select option {
+    color: #fff;
+    background-color: #000;
+}
+
+/* footer_policies */
+.footer_left .footer_policies {
+    width: 30%;
+    line-height: 28px;
+    font-size: 14px;
+}
+
+/* footer_right */
+.footer_bottom .footer_right {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    margin-right: 40px;
+}
+
+/* footer_sns */
+.footer_right .footer_sns {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    margin-bottom: 10px;
+}
+
+.footer_sns ul {
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer_sns img {
+    width: 30px;
+}
+
+/* footer__address */
+.footer_right .footer_address {
+    width: 100%;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+/* footer_logo */
+.footer_right .footer_logo {
+    width: 100%;
+}
+
+.footer_logo ul {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+}
+
+.footer_logo img {
+    width: 100px;
+    margin-left: 20px;
+}
+
+
+.fp-watermark a {
+    display: none;
+}
