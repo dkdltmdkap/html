@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>m.naver</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+    <script src="logout.js"></script>
+</head>
+
+<body>
+    <div class="wrap">
+        <header>
+            <aside>
+                <img src="img/menuBar.svg" alt="메뉴바">
+                <img src="img/payLogo.svg" alt="네이버 페이">
+                <img src="img/shopping.svg" alt="네이버 쇼핑">
+            </aside>
+            <aside>
+                <img src="img/talk.svg" alt="질문">
+                <img src="img/bell.svg" alt="알림">
+                <a href="login.html" id="logOut">
+                    <img src="img/myTab.svg" alt="마이 탭">
+                </a>
+            </aside>
+        </header>
+
+        <main>
+            <section>
+                <div class="search">
+                    <div class="logo">
+                        <img src="img/NLogo.svg" alt="네이버 로고">
+                    </div>
+                    <input type="search" placeholder="검색어를 입력해주세요.">
+                    <div class="search-btn">
+                        <button></button>
+                    </div>
+                </div>
+
+                <div class="search_etc">
+                    <ul>
+                        <li>홈</li>
+                        <li>뉴스</li>
+                        <li>엔터</li>
+                        <li>스포츠</li>
+                        <li>쇼핑투데이</li>
+                        <li>경제</li>
+                        <li>클립</li>
+                        <li>푸드</li>
+                        <li>자동차</li>
+                        <li>지식+</li>
+                        <li>리빙</li>
+                        <li>건강</li>
+                        <li>게임</li>
+                        <li>웹툰</li>
+                        <li>우리동네</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section>
+                <ul>
+                    <li>
+                        <img src="https://s.pstatic.net/static/www/mobile/edit/20240926_0/upload_1727340529461tGtV8.png"
+                            alt="뉴스판">
+                        <p>뉴스판</p>
+                    </li>
+                    <li>
+                        <img src="https://s.pstatic.net/static/www/mobile/edit/20240926_0/upload_1727340609927a4VUk.png"
+                            alt="스토어">
+                        <p>스토어</p>
+                    </li>
+                    <li>
+                        <img src="https://s.pstatic.net/static/www/mobile/edit/20240926_0/upload_1727340640840FWUt0.png"
+                            alt="경제판">
+                        <p>경제판</p>
+                    </li>
+                    <li>
+                        <img src="https://s.pstatic.net/static/www/mobile/edit/20240926_0/upload_1727340671003TqsLB.png"
+                            alt="클립판">
+                        <p>클립판</p>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <img src="https://s.pstatic.net/static/www/mobile/edit/20240926_0/upload_1727340694234hLngf.png"
+                            alt="메일">
+                        <p>메일</p>
+                    </li>
+                    <li>
+                        <img src="https://s.pstatic.net/static/www/mobile/edit/20240926_0/upload_1727340716454Pctgy.png"
+                            alt="카페">
+                        <p>카페</p>
+                    </li>
+                    <li>
+                        <img src="https://s.pstatic.net/static/www/mobile/edit/20240926_0/upload_1727340486286Jh4lB.png"
+                            alt="블로그">
+                        <p>블로그</p>
+                    </li>
+                    <li>
+                        <img src="https://s.pstatic.net/static/www/mobile/edit/2021/0427/upload_1619497854375Q53rw.png"
+                            alt="...">
+                    </li>
+                </ul>
+            </section>
+
+            <section>
+                <div class="netflix">
+                    <div class="netflixImages">
+                        <img src="https://ssl.pstatic.net/melona/libs/1533/1533426/4d1e10eaa2da11b78c7a_20250624184935056.png"
+                            alt="Netflix">
+                        <img src="https://ssl.pstatic.net/melona/libs/1533/1533426/20d0c0e501d9197bff0b_20250624184939670.png"
+                            alt="퍼레이드">
+                    </div>
+                    <div class="left_arrow">
+                        <button></button>
+                    </div>
+                    <div class="netflix_purson">
+                        <img src="img/이정재.png" alt="">
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="weather">
+                    <ul>
+                        <li>
+                            <img id="weatherIcon" alt="날씨 아이콘">
+                        </li>
+                        <li>
+                            <p id="weatherText"></p>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <p id="airText"></p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="advertising">
+                    <div class="advertising_1">
+                        <ul>
+                            <li><span>요즘 인기 콘텐츠</span></li>
+                            <li>
+                                <select name="age" id="age">
+                                    <option value="전체">전체</option>
+                                    <option value="10대">10대</option>
+                                    <option value="20대">20대</option>
+                                    <option value="30대">30대</option>
+                                    <option value="40대">40대</option>
+                                    <option value="50대">50대</option>
+                                    <option value="60대">60대 이상</option>
+                                </select>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li></li>
+                        </ul>
+                    </div>
+
+                    <div class="advertising_2">
+                        <ul>
+                            <li><span>‘추억의 대한뉴스’ 인터넷서 본다</span></li>
+                        </ul>
+                        <ul>
+                            <li></li>
+                        </ul>
+                    </div>
+
+                    <div class="advertising_3">
+                        <ul>
+                            <li><span>미공개 대한뉴스</span></li>
+                        </ul>
+                        <ul>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <aside>
+                <div class="minus_plus">
+                    <button id="minus">가-</button>
+                    <button id="plus"><span>가+</span></button>
+                </div>
+                <div class="up">
+                    <a href="#" id="up">
+                        <img src="img/top.svg" alt="맨 위로">
+                    </a>
+                </div>
+            </aside>
+            <aside>
+                <ul>
+                    <li>
+                        <a href="login.html">로그인</a>
+                    </li>
+                    <li>전체서비스</li>
+                    <li>PC버전</li>
+                </ul>
+                <ul>
+                    <li>이용약관</li>
+                    <li><span>개인정보처리방침</span></li>
+                    <li>고객센터</li>
+                </ul>
+                <ul>
+                    <li>NAVER</li>
+                </ul>
+            </aside>
+        </footer>
+    </div>
+</body>
+
+</html>
