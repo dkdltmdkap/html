@@ -5,11 +5,7 @@
 
 body {
     width: 100%;
-<<<<<<< HEAD
     background-color: #000000;
-=======
-    background-color: #251B37;
->>>>>>> 9f128699fb36964ac6eebce5fea1f5d500630d6f
 }
 
 ul {
@@ -18,7 +14,6 @@ ul {
 
 a:link,
 a:visited {
-<<<<<<< HEAD
     color: #F2F2F2;
     text-decoration: none;
 }
@@ -255,38 +250,6 @@ nav li {
     from {
         opacity: 0;
         transform: translateY(30px);
-=======
-    color: #FFECEF;
-    text-decoration: none;
-}
-
-/* fullpage */
-#fullpage {
-    background-color: #251B37;
-}
-
-/* .section:nth-child(1) */
-#fullpage .section:nth-child(1) {
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-#fullpage .section:nth-child(1) h1 {
-    font-size: 4rem;
-    opacity: 0;
-    animation-name: fadeInH1;
-    animation-duration: 1.5s;
-    animation-timing-function: ease-in-out;
-    animation-fill-mode: forwards;
-    transform: translateY(20px);
-}
-
-@keyframes fadeInH1 {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
->>>>>>> 9f128699fb36964ac6eebce5fea1f5d500630d6f
     }
 
     to {
@@ -295,7 +258,6 @@ nav li {
     }
 }
 
-<<<<<<< HEAD
 /* ABOUTME */
 .ABOUTME {
     width: 100%;
@@ -551,6 +513,301 @@ nav li {
 }
 
 /* WORK */
+.WORK {
+    width: 200%;
+    height: 100vh;
+    display: flex;
+}
+
+/* miniProject */
+.WORK .miniProject {
+    width: 100%;
+    height: 100vh;
+}
+
+.miniProject .miniProject_list {
+    width: 200vw;
+    height: 630px;
+    display: flex;
+    position: relative;
+    transition: transform 0.5s ease;
+}
+
+.miniProject_list .page_01 {
+    width: 100%;
+    height: 630px;
+    margin: 70px auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.miniProject_list .page_02 {
+    width: 100%;
+    height: 630px;
+    margin: 70px auto;
+    position: relative;
+    overflow: hidden;
+}
+
+/*
+dunkin_project,
+netflix_project,
+museums_project,
+naver_project,
+management_project,
+canvas
+*/
+.miniProject_list .dunkin_project {
+    width: 26%;
+    height: 95%;
+    background-color: #fff;
+    transform: skew(-20deg);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.dunkin_project h1 {
+    transform: skew(20deg);
+    font-size: 40px;
+    text-align: left;
+    margin-top: 10px;
+    margin-left: 40px;
+}
+
+.miniProject_list .netflix_project {
+    width: 26%;
+    height: 95%;
+    background-color: rgb(211, 211, 211);
+    transform: skew(-20deg);
+    position: absolute;
+    top: 30px;
+    left: 24%;
+}
+
+.miniProject_list .museums_project {
+    width: 26%;
+    height: 95%;
+    background-color: #fff;
+    transform: skew(-20deg);
+    position: absolute;
+    top: 0;
+    left: 49.5%;
+}
+
+.miniProject_list .naver_project {
+    width: 26%;
+    height: 95%;
+    background-color: rgb(211, 211, 211);
+    transform: skew(-20deg);
+    position: absolute;
+    top: 30px;
+    right: 0;
+}
+
+.miniProject_list .canvas_project {
+    width: 26%;
+    height: 95%;
+    background-color: #fff;
+    transform: skew(-20deg);
+    position: absolute;
+    top: 30px;
+    left: 0;
+}
+
+.miniProject_list .management_project {
+    width: 26%;
+    height: 95%;
+    background-color: rgb(211, 211, 211);
+    transform: skew(-20deg);
+    position: absolute;
+    top: 0;
+    left: 24%;
+}
+
+/* dunkin */
+.dunkin_project .dunkin {
+    width: 80%;
+    height: 80%;
+    background-color: #fff;
+    margin: 2% auto;
+    border: 6px dashed black;
+    background: url(img/thumbnail/dunkin_thumbnail.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.dunkin p {
+    margin-top: 150px;
+    color: white;
+    text-shadow: 3px 3px 5px rgb(0, 0, 0);
+    font-size: 22px;
+    font-weight: bold;
+    transform: skew(20deg);
+}
+
+/* netflix */
+.netflix_project .netflix {
+    width: 80%;
+    height: 80%;
+    background-color: #fff;
+    margin: 13.5% auto;
+    border: 6px dashed black;
+    background: url(img/thumbnail/netflix_thumbnail.png);
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.netflix p {
+    margin-top: 190px;
+    color: #fff;
+    text-shadow: 3px 3px 5px rgb(0, 0, 0);
+    font-size: 22px;
+    font-weight: bold;
+    transform: skew(20deg);
+}
+
+/* museums */
+.museums_project .museums {
+    width: 80%;
+    height: 80%;
+    background-color: #fff;
+    margin: 13.5% auto;
+    border: 6px dashed #000;
+    background: url(img/thumbnail/museums_thumbnail.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.museums p {
+    margin-top: 190px;
+    color: #fff;
+    text-shadow: 3px 3px 5px rgb(0, 0, 0);
+    font-size: 22px;
+    font-weight: bold;
+    transform: skew(20deg);
+}
+
+/* naver */
+.naver_project .naver {
+    width: 80%;
+    height: 80%;
+    background-color: #fff;
+    margin: 15% auto;
+    border: 6px dashed #000;
+    background: url(img/thumbnail/naver_thumbnail.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.naver p {
+    margin-top: 150px;
+    color: #fff;
+    text-shadow: 3px 3px 5px rgb(0, 0, 0);
+    font-size: 22px;
+    font-weight: bold;
+    transform: skew(20deg);
+}
+
+/* canvas */
+.canvas_project .canvas {
+    width: 80%;
+    height: 80%;
+    background-color: #fff;
+    margin: 15% auto;
+    border: 6px dashed #000;
+    background: url(img/thumbnail/canvas_thumbnail.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.canvas p {
+    margin-top: 150px;
+    color: #fff;
+    text-shadow: 3px 3px 5px rgb(0, 0, 0);
+    font-size: 22px;
+    font-weight: bold;
+    transform: skew(20deg);
+}
+
+/* management */
+.management_project .management {
+    width: 80%;
+    height: 80%;
+    background-color: #fff;
+    margin: 15% auto;
+    border: 6px dashed #000;
+    background: url(img/thumbnail/management_thumbnail.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.management p {
+    margin-top: 150px;
+    color: #fff;
+    text-shadow: 3px 3px 5px rgb(0, 0, 0);
+    font-size: 22px;
+    font-weight: bold;
+    transform: skew(20deg);
+}
+
+.page_01 p:hover,
+.page_02 p:hover {
+    color: #B6B09F;
+    font-size: 30px;
+}
+
+
+/* slider-buttons */
+.slider-buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1000;
+}
+
+.slider-buttons .prevBtn {
+    width: 50px;
+    height: 50px;
+    background: url(img/left.svg);
+    /* background-color: #B6B09F; */
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 50%;
+    padding: 20px;
+    margin: 30px;
+    cursor: pointer;
+}
+
+.slider-buttons .nextBtn {
+    width: 50px;
+    height: 50px;
+    background: url(img/right.svg);
+    /* background-color: #B6B09F; */
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 50%;
+    padding: 20px;
+    margin: 30px;
+    cursor: pointer;
+}
+
+
 /* CONTACT */
 .CONTACT {
     width: 100%;
@@ -575,7 +832,7 @@ aside:nth-of-type(1) .contact_title {
 }
 
 .contact_title h1 {
-    color: white;
+    color: #fff;
     font-size: 50px;
     position: absolute;
     top: 20px;
@@ -593,7 +850,7 @@ aside:nth-of-type(1) .thankyou {
 .thankyou span {
     font-size: 70px;
     font-weight: bold;
-    color: white;
+    color: #fff;
 }
 
 .thankyou span:nth-of-type(1) {
@@ -617,7 +874,7 @@ aside:nth-of-type(1) .my {
 }
 
 .my p {
-    color: white;
+    color: #fff;
     font-size: 18px;
     font-weight: 500;
 }
@@ -632,8 +889,8 @@ aside:nth-of-type(1) .my {
 .CONTACT .send_mail {
     width: 100%;
     height: 500px;
-    color: white;
-    border: 1px solid white;
+    color: #fff;
+    border: 1px solid #fff;
     position: absolute;
     top: 110px;
     right: 80px;
@@ -726,336 +983,4 @@ footer {
 footer p {
     color: #B6B09F;
     font-weight: 400;
-=======
-.section:nth-child(1) .fp-tableCell {
-    color: rgb(255, 255, 255);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-/* .section:nth-child(2) */
-#fullpage .section:nth-child(2) {
-    /* background: url('img/profile.jpg'); */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative;
-}
-
-.section:nth-child(2)::before {
-    content: '';
-    width: 95%;
-    height: 90%;
-    background-color: rgba(255, 202, 202, .7);
-    position: absolute;
-    top: 95px;
-    left: 85px;
-    border-top-left-radius: 70px;
-}
-
-.section:nth-child(2) .fp-tableCell {
-    position: absolute;
-    top: 56px;
-    left: 120px;
-    font-size: 26px;
-}
-
-.section:nth-child(2) h1 {
-    color: white;
-}
-
-.aboutMyself {
-    width: 87.5%;
-    height: 730px;
-    position: absolute;
-    top: 96px;
-}
-
-.aboutMyself ul {
-    width: 100%;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-}
-
-.aboutMyself li:nth-child(1) {
-    width: 27.8%;
-    height: 100%;
-    background: url(img/myImg.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.aboutMyself li:nth-child(2),
-.aboutMyself .developerLogo {
-    width: 35%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 29%;
-}
-
-.section:nth-child(2) .txt {
-    margin-top: 14px;
-    font-size: 15px;
-    line-height: 26px;
-}
-
-.txt span {
-    font-weight: 500;
-}
-
-.section:nth-child(2) {
-    display: flex;
-    flex-direction: row;
-}
-
-.section:nth-child(2) .developerLogo {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    /* background-color: rgba(0, 0, 255, 0.5); */
-    left: 65%;
-}
-
-.developerLogo img {
-    width: 80px;
-    height: 80px;
-    margin-top: 10px;
-}
-
-.section:nth-child(2) .graphs ul {
-    display: flex;
-    position: absolute;
-    top: 14px;
-    right: 14px;
-}
-
-.section:nth-child(2) #skills {
-    width: 450px;
-    height: 700px;
-    position: absolute;
-    top: 14px;
-    right: 14px;
-}
-
-.section:nth-child(2) .level {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border: 1px solid #251B37;
-    margin-top: 5px;
-}
-
-.section:nth-child(2) .low {
-    position: absolute;
-    top: 0;
-    right: 400px;
-    text-align: center;
-    padding-right: 20px;
-    padding-left: 20px;
-    border-right: 1px solid black;
-}
-
-.section:nth-child(2) .medium {
-    position: absolute;
-    top: 0;
-    right: 270px;
-    text-align: center;
-    padding-right: 52px;
-    padding-left: 52px;
-    border-right: 1px solid black;
-}
-
-.section:nth-child(2) .high {
-    position: absolute;
-    top: 0;
-    right: 14px;
-    text-align: center;
-    padding-right: 116px;
-    padding-left: 116px;
-    border-right: 1px solid #251B37;
-}
-
-
-/* .section:nth-child(3) */
-/* #fullpage .section:nth-child(3) {
-    background: url('img/design.jpg');
-} */
-
-#fullpage .section:nth-child(3) .fp-tableCell {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-}
-
-.section:nth-child(3) h1 {
-    color: rgb(255, 255, 255);
-    position: absolute;
-    top: 110px;
-    left: 140px;
-    font-size: 50px;
-}
-
-.section:nth-child(3) h3:nth-of-type(1) {
-    color: rgb(255, 255, 255);
-    position: absolute;
-    top: 205px;
-    left: 140px;
-    font-size: 17px;
-}
-
-/* 이미지 */
-.section:nth-child(3) .wrap {
-    width: 90%;
-    min-width: 380px;
-}
-
-.section:nth-child(3) .wrap ul {
-    width: 90%;
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
-    justify-content: space-between;
-}
-
-.section:nth-child(3) .wrap li {
-    width: 20%;
-    height: 620px;
-    position: absolute;
-    top: 260px;
-    left: 121px;
-}
-
-.section:nth-child(3) .wrap li:nth-child(1) {
-    position: absolute;
-    top: 260px;
-    left: 121px;
-}
-
-.section:nth-child(3) .wrap li:nth-child(2) {
-    position: absolute;
-    top: 260px;
-    left: 552px;
-}
-
-.section:nth-child(3) .wrap li:nth-child(3) {
-    position: absolute;
-    top: 260px;
-    left: 982px;
-}
-
-.section:nth-child(3) .wrap li:nth-child(4) {
-    position: absolute;
-    top: 260px;
-    left: 1413px;
-}
-
-.section:nth-child(3) .wrap img {
-    width: 90%;
-    height: 90%;
-    border: 1px solid #333;
-}
-
-.section:nth-child(3) a:nth-child(2) {
-    color: rgb(255, 255, 255);
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-}
-
-/* .section:nth-child(4) */
-#fullpage .section:nth-child(4),
-#fullpage .section:nth-child(5) {
-    width: 100%;
-    position: relative;
-    /* background: url(img/Web\ Publishing.jpg); */
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.section:nth-child(4) .fp-tableCell,
-.section:nth-child(5) .fp-tableCell {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    color: rgb(255, 255, 255);
-}
-
-.section:nth-child(4) h1 {
-    font-size: 50px;
-    font-weight: bold;
-    position: absolute;
-    top: 150px;
-    left: 120px;
-}
-
-.section:nth-child(4) .article,
-.section:nth-child(5) .article {
-    width: 37%;
-    height: 380px;
-    border: 1px solid black;
-    border-radius: 15px;
-    position: absolute;
-    top: 275px;
-    left: 120px;
-}
-
-.section:nth-child(4) .article:nth-child(2),
-.section:nth-child(5) .article:nth-child(1) {
-    position: absolute;
-    left: 120px;
-}
-
-.section:nth-child(4) .article:nth-child(3),
-.section:nth-child(5) .article:nth-child(2) {
-    position: absolute;
-    left: 1090px;
-}
-
-.section:nth-child(4) .article img,
-.section:nth-child(5) .article img {
-    width: 250px;
-    border-radius: 15px;
-}
-
-
-
-
-/* menu */
-.menu {
-    width: 62%;
-    height: 5vh;
-    background-color: #FFECEF;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 20;
-}
-
-.menu ul {
-    width: 100%;
-    min-width: 160px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.menu li {
-    width: 35%;
-    line-height: 2.5rem;
-    text-align: center;
-    cursor: pointer;
-    font-weight: bold;
-}
-
-.menu a {
-    color: #251B37;
->>>>>>> 9f128699fb36964ac6eebce5fea1f5d500630d6f
 }
