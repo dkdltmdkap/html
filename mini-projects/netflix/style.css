@@ -1,0 +1,454 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #212121;
+}
+
+ul {
+    list-style: none;
+}
+
+a:link,
+a:visited {
+    color: #333;
+}
+
+/* header */
+header {
+    width: 100%;
+    height: 60px;
+    background-color: #000;
+    display: flex;
+}
+
+/* logo */
+header .full_logo {
+    width: 40%;
+    display: flex;
+    position: relative;
+}
+
+.full_logo img {
+    width: 130px;
+    position: absolute;
+    top: -35px;
+    left: 20px;
+}
+
+header .logo {
+    display: none;
+}
+
+/* m_s_l */
+header .m_s_l {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+/* movie */
+.m_s_l .movie {
+    width: 100%;
+}
+
+.movie p {
+    color: white;
+    font-size: 13px;
+    text-align: right;
+    margin-right: 10px;
+}
+
+/* sign_login */
+.m_s_l .sign_login {
+    width: 50%;
+    display: flex;
+    justify-content: right;
+}
+
+.sign_login #sign_up {
+    width: 140px;
+    height: 30px;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    background-color: red;
+    font-size: 15px;
+    margin-right: 15px;
+}
+
+.sign_login #login {
+    width: 75px;
+    height: 30px;
+    color: white;
+    border: 1px solid #a3a3a3;
+    border-radius: 4px;
+    background-color: transparent;
+    font-size: 15px;
+    margin-right: 30px;
+}
+
+/* main */
+main {
+    width: 95%;
+    height: 3300px;
+    margin: auto;
+    /* background: url(https://easy0-0.github.io/portfolio/netfilx/images/visual1.jpg); */
+    background: url(https://easy0-0.github.io/portfolio/netfilx/images/visual1.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #171711;
+}
+
+main .movie_description {
+    width: 100%;
+    height: 762px;
+    background: linear-gradient(to right, #181810,
+            rgba(23, 23, 23, .98) 20%,
+            rgba(23, 23, 23, .95) 30%,
+            rgba(23, 23, 23, .9) 40%,
+            rgba(23, 23, 23, .8) 50%,
+            rgba(23, 23, 23, .7) 60%,
+            rgba(23, 23, 23, .6) 70%,
+            rgba(23, 23, 23, .4) 80%,
+            rgba(23, 23, 23, .3) 90%,
+            rgba(23, 23, 23, .0) 100%);
+    ;
+}
+
+/* seungHoLee */
+main .seungHoLee {
+    width: 50%;
+}
+
+.seungHoLee img {
+    width: 300px;
+    margin-top: 40px;
+    margin-left: 30px;
+}
+
+/* movie_ul */
+main .movie_ul {
+    width: 48%;
+    margin-top: 20px;
+}
+
+.movie_ul ul {
+    width: 100%;
+}
+
+.movie_ul li {
+    color: white;
+    margin-left: 45px;
+}
+
+.movie_ul li {
+    margin-bottom: 15px;
+}
+
+.movie_ul li span {
+    color: #a3a3a3;
+}
+
+.movie_ul li .box {
+    border: 1px solid #a3a3a3;
+}
+
+.movie_ul li h1,
+.movie_ul li h2 {
+    font-weight: 400;
+}
+
+.movie_ul button {
+    width: 300px;
+    height: 50px;
+    color: #fff;
+    background-color: #e0403b;
+    border: none;
+    border-radius: 4px;
+    margin-top: -10px;
+    font-size: 16px;
+}
+
+/* seungHoLee_description */
+main .seungHoLee_description {
+    width: 45%;
+    margin-top: 50px;
+    margin-left: 45px;
+    position: relative;
+    padding-bottom: 50px;
+}
+
+.seungHoLee_description::before {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: #a3a3a3;
+    position: absolute;
+    top: -15px;
+}
+
+.seungHoLee_description::after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: #a3a3a3;
+    position: absolute;
+    top: 65px;
+}
+
+.seungHoLee_description li p {
+    color: #a3a3a3;
+}
+
+/* description */
+main .description {
+    width: 100%;
+    height: 3000px;
+    padding-top: 50px;
+    /* background-color: #171711; */
+}
+
+/* video */
+main .video {
+    width: 70%;
+    height: 330px;
+    margin-top: 50px;
+    margin-left: 40px;
+}
+
+.video ul {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.video li {
+    color: white;
+}
+
+.video span {
+    color: #a3a3a3;
+}
+
+.video ul:nth-child(2) {
+    width: 300px;
+    height: 200px;
+    margin-top: 5px;
+    display: block;
+}
+
+.video ul:nth-child(2) p {
+    padding-top: 8px;
+}
+
+
+/* details */
+main .details {
+    width: 100%;
+    height: 520px;
+}
+
+.details h1 {
+    color: #fff;
+    margin-left: 35px;
+}
+
+.details .details_ul {
+    width: 80%;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.details ul {
+    width: 100%;
+    display: flex;
+}
+
+.details li {
+    width: 100%;
+    padding: 10px;
+}
+
+.details li span {
+    line-height: 48px;
+    color: #a3a3a3;
+}
+
+.details li p {
+    color: #fff;
+    line-height: 28px;
+}
+
+.details ul:nth-child(2) li:nth-child(2) {
+    padding-right: 35%;
+}
+
+.details ul:nth-child(3) li:nth-child(2) p,
+.details ul:nth-child(3) li:nth-child(3) p {
+    margin-top: 46px;
+}
+
+
+/* watched_with */
+main .watched_with {
+    width: 100%;
+    height: 900px;
+    margin: auto;
+    z-index: 10;
+}
+
+.watched_with h1 {
+    color: #fff;
+    margin-bottom: 20px;
+    margin-left: 30px;
+}
+
+.watched_with .watched_movied {
+    width: 100%;
+    margin-left: 28px;
+}
+
+.watched_movied ul {
+    width: 94%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.watched_movied li {
+    margin: 10px;
+}
+
+.watched_movied img {
+    width: 410px;
+}
+
+/* nearing_public */
+main .nearing_public {
+    width: 100%;
+    height: 550px;
+    margin-top: 68px;
+}
+
+.nearing_public h1 {
+    color: #fff;
+}
+
+main .nearing_public_list {
+    width: 100%;
+}
+
+.nearing_public_list ul {
+    width: 94%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.nearing_public_list li {
+    width: 30%;
+}
+
+.nearing_public_list li h3 {
+    color: #fff;
+    padding-bottom: 10px;
+}
+
+.nearing_public_list li p {
+    color: #a3a3a3;
+    padding-bottom: 10px;
+}
+
+
+/* footer */
+footer {
+    width: 95%;
+    height: 700px;
+    margin: auto;
+    background-color: #171711;
+}
+
+/* question */
+footer .question {
+    width: 100%;
+}
+
+.question p {
+    color: #a3a3a3;
+    margin-bottom: 20px;
+    padding-left: 40px;
+}
+
+.question .question_list {
+    width: 80%;
+    padding-left: 40px;
+}
+
+.question_list ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-block: 10px;
+}
+
+.question_list ul:nth-child(4) {
+    width: 75%;
+}
+
+.question_list ul:last-child {
+    margin-top: 20px;
+}
+
+.question_list li {
+    width: 40%;
+    color: #a3a3a3;
+}
+
+/* question_btns */
+footer .question_btns {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.question_btns select {
+    width: 70px;
+    height: 30px;
+    margin-left: 38px;
+    border: none;
+    color: #fff;
+    background-color: #000;
+    outline: none;
+}
+
+/* explain_other */
+footer .explain_other {
+    width: 100%;
+    height: 250px;
+    margin-top: 20px;
+}
+
+.explain_other h4 {
+    color: #a3a3a3;
+    margin-left: 40px;
+}
+
+.explain_other ul {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.explain_other li {
+    margin-left: 40px;
+    line-height: 28px;
+    font-size: 14px;
+    color: #a3a3a3;
+}

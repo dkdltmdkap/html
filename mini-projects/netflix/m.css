@@ -1,0 +1,138 @@
+@media screen and (max-width: 800px) {
+    .watched_movied ul:nth-child(2n-1) {
+        width: 94%;
+        display: block;
+        /* align-items: center;
+        justify-content: space-between; */
+        margin-bottom: 15px;
+    }
+
+    .watched_movied ul:nth-child(2n) {
+        width: 94%;
+        display: block;
+        /* align-items: center;
+        justify-content: space-between; */
+        margin-bottom: 15px;
+    }
+
+
+    .watched_movied img {
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    header .full_logo {
+        display: none;
+    }
+
+    header .logo {
+        width: 15%;
+        height: 50px;
+        display: flex;
+        margin-top: 5px;
+    }
+
+    header .m_s_l {
+        width: 85%;
+    }
+
+    header .movie p {
+        display: none;
+    }
+
+    .m_s_l .sign_login {
+        width: 50%;
+        display: flex;
+    }
+
+    .sign_login #sign_up {
+        margin-right: 10px;
+    }
+
+    /* main */
+    main {
+        width: 100%;
+        height: 6140px;
+    }
+
+    /* movie_description */
+    main .movie_description {
+        background: none;
+    }
+
+    /* seungHoLee */
+    .seungHoLee img {
+        margin-top: 330px;
+        margin-left: 20px;
+    }
+
+    /* movie_ul */
+    main .movie_ul {
+        width: 96%;
+        margin-top: -15px;
+    }
+
+    .movie_ul li {
+        margin-left: 30px;
+    }
+
+    /* seungHoLee_description */
+    main .seungHoLee_description {
+        width: 88%;
+        margin-left: 30px;
+    }
+
+    /* description */
+    main .description {
+        width: 100%;
+        height: 4500px;
+        padding-top: 0;
+    }
+
+    /* video */
+    main .video {
+        margin-top: 200px;
+        margin-left: 35px;
+        padding-top: 20px;
+    }
+
+    /* details */
+    main .details {
+        height: 820px;
+    }
+
+    .details ul {
+        display: block;
+    }
+
+    .details ul:nth-child(3) li:nth-child(2) p,
+    .details ul:nth-child(3) li:nth-child(3) p {
+        margin-top: -22px;
+    }
+
+    .details ul:nth-child(3) li:nth-child(3) {
+        display: none;
+    }
+
+    /* watched_with */
+    main .watched_with {
+        width: 88%;
+    }
+
+    .watched_with h1 {
+        margin-left: 0;
+    }
+
+    .watched_with .watched_movied {
+        margin-left: 0;
+    }
+
+    .watched_movied li {
+        margin-bottom: 10px;
+    }
+
+    .watched_movied img {
+        width: 526px;
+    }
+}
