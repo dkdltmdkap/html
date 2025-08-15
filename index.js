@@ -147,7 +147,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 // 포트폴리오 페이지 넘기기
-const miniProjectUl = document.querySelector('.miniProject_list'); // ✅ 슬라이드 대상
+const miniProjectUl = document.querySelector('.miniProject_list'); // 슬라이드 대상
 const prevBtn = document.querySelector('.prevBtn');
 const nextBtn = document.querySelector('.nextBtn');
 

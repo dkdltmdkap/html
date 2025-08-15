@@ -290,27 +290,29 @@
             <aside>
                 <div class="send_mail">
                     <h1>SEND MAIL</h1>
-                    <div class="name_email">
-                        <div class="input_name">
-                            <label for="">NAME</label>
-                            <input type="text" name="" id="" placeholder="이름을 입력해주세요.">
+                    <form action="https://formspree.io/f/mjkozjda" method="POST">
+                        <div class="name_email">
+                            <div class="input_name">
+                                <label for="">NAME</label>
+                                <input type="text" name="name" id="name" placeholder="이름을 입력해주세요." required>
+                            </div>
+                            <div class="input_email">
+                                <label for="">EMAIL</label>
+                                <input type="email" name="email" id="email" placeholder="답신할 이메일을 입력해주세요." required>
+                            </div>
                         </div>
-                        <div class="input_email">
-                            <label for="">EMAIL</label>
-                            <input type="email" name="" id="" placeholder="답신할 이메일을 입력해주세요.">
+                        <div class="message">
+                            <div class="input_message">
+                                <label for="">MESSAGE</label>
+                                <textarea name="message" id="message" placeholder="내용을 입력해주세요." required></textarea>
+                            </div>
                         </div>
-                    </div>
-                    <div class="message">
-                        <div class="input_message">
-                            <label for="">MESSAGE</label>
-                            <textarea name="" id="" placeholder="내용을 입력해주세요."></textarea>
+                        <div id="btn">
+                            <button type="submit" id="send">
+                                SEND MAIL
+                            </button>
                         </div>
-                    </div>
-                    <div id="btn">
-                        <button id="send">
-                            SEND MAIL
-                        </button>
-                    </div>
+                    </form>
                 </div>
             </aside>
 
