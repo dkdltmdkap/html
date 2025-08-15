@@ -554,8 +554,9 @@ dunkin_project,
 netflix_project,
 museums_project,
 naver_project,
+canvas,
 management_project,
-canvas
+instagram_project
 */
 .miniProject_list .dunkin_project {
     width: 26%;
@@ -623,6 +624,16 @@ canvas
     position: absolute;
     top: 0;
     left: 24%;
+}
+
+.miniProject_list .instagram_project {
+    width: 26%;
+    height: 95%;
+    background-color: #fff;
+    transform: skew(-20deg);
+    position: absolute;
+    top: 30px;
+    left: 48%;
 }
 
 /* dunkin */
@@ -762,6 +773,30 @@ canvas
     font-weight: bold;
     transform: skew(20deg);
 }
+
+/* instagram */
+.instagram_project .instagram {
+    width: 80%;
+    height: 80%;
+    background-color: #fff;
+    margin: 15% auto;
+    border: 6px dashed #000;
+    background: url(img/thumbnail/instagram_thumbnail.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.instagram p {
+    margin-top: 150px;
+    color: #fff;
+    text-shadow: 3px 3px 5px rgb(0, 0, 0);
+    font-size: 22px;
+    font-weight: bold;
+    transform: skew(20deg);
+}
+
 
 .page_01 p:hover,
 .page_02 p:hover {
