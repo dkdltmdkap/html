@@ -1,3 +1,118 @@
+new fullpage('#fullpage', {
+    licenseKey: 'gplv3-license',
+    autoScrolling: true,
+    scrollHorizontally: true
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+    /* -----------------------------
+        1) HOME: 글자 span으로 감싸기
+        - 공백(space) 문자는 &nbsp;로 대체해서 렌더링 보장
+        - 각 span에 data-delay 저장
+       ----------------------------- */
+    function wrapChars(element) {
+        const text = element.textContent || '';
+        element.textContent = ''; // 기존 텍스트 제거
+        const frag = document.createDocumentFragment();
+        [...text].forEach((ch, i) => {
+            const span = document.createElement('span');
+            // 공백은 유지(HTML에서 연속 공백이 깨지므로 non-breaking space로 처리)
+            if (ch === ' ') span.innerHTML = '&nbsp;';
+            else span.textContent = ch;
+            span.dataset.delay = (i * 0.09).toString(); // 재시작시 사용할 delay
+            span.style.display = 'inline-block';
+            frag.appendChild(span);
+        });
+        element.appendChild(frag);
+    }
+
+    const title = document.getElementById('home-title');
+    const subtitle = document.getElementById('home-subtitle');
+    wrapChars(title);
+    wrapChars(subtitle);
+
+    /* -----------------------------
+        2) HOME: '완전 재시작' 함수
+        - clone 교체 + requestAnimationFrame + setTimeout으로 안전하게 재시작
+       ----------------------------- */
+    function restartHomeAnimation() {
+        // clone 모든 span (이로써 애니메이션 타임라인 초기화)
+        const homeSpans = document.querySelectorAll('.HOME span');
+        homeSpans.forEach(old => {
+            const clone = old.cloneNode(true);
+            // 클론은 inline style 없으므로 애니메이션 재설정 용이
+            old.replaceWith(clone);
+        });
+
+        // 다음 프레임에서 애니메이션 inline 설정 (딜레이 유지)
+        requestAnimationFrame(() => {
+            // 작은 타임아웃을 주면 브라우저가 확실히 새 타임라인을 적용
+            setTimeout(() => {
+                document.querySelectorAll('.HOME span').forEach(s => {
+                    const d = Number(s.dataset.delay) || 0;
+                    // inline animation 설정: bounce 0.8s, 딜레이, 무한 반복
+                    s.style.animation = `bounce 0.8s ease ${d}s infinite`;
+                    s.style.animationFillMode = 'both';
+                    s.style.willChange = 'transform';
+                });
+            }, 10);
+        });
+    }
+
+    function stopHomeAnimation() {
+        // 애니메이션 일시정지 (reset 시 재시작 용이)
+        document.querySelectorAll('.HOME span').forEach(s => {
+            // 일시정지보다 아예 animation을 제거하고 opacity/transform 유지시키려면 사용 가능
+            s.style.animation = 'none';
+        });
+    }
+
+    // 처음 로드 시 실행
+    restartHomeAnimation();
+
+    /* -----------------------------
+        3) IntersectionObserver: HOME 및 ABOUTME 감시
+        - HOME: 화면에 들어오면 restart, 나가면 stop
+        - ABOUTME: .show 토글
+       ----------------------------- */
+    const homeSection = document.querySelector('.HOME');
+    const aboutSection = document.querySelector('.ABOUTME');
+
+    const io = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            const el = entry.target;
+            if (el === homeSection) {
+                if (entry.isIntersecting) {
+                    restartHomeAnimation(); // 재진입할 때마다 처음부터 다시 실행
+                } else {
+                    stopHomeAnimation();
+                }
+            } else if (el === aboutSection) {
+                if (entry.isIntersecting) aboutSection.classList.add('show');
+                else aboutSection.classList.remove('show');
+            }
+        });
+    }, { threshold: 0.4 });
+
+    io.observe(homeSection);
+    io.observe(aboutSection);
+
+    // WORK IntersectionObserver
+    const work = document.querySelector('.WORK');
+    const workObserver = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                work.classList.add('show');
+            } else {
+                work.classList.remove('show'); // 스크롤 벗어나면 다시 초기화
+            }
+        });
+    }, { threshold: 0.3 });
+
+    workObserver.observe(work);
+});
+
+
 // 페이지 조정
 $('#fullpage').fullpage({
     anchors: ['HOME', 'ABOUTME', 'SKILL', 'WORK', 'CONTACT'],
@@ -75,17 +190,16 @@ $('#fullpage').fullpage({
     }
 });
 
-// mini-project를 popup창 띄우기
-// $('.d1').colorbox({ rel: 'gal' });
-// $('.d1').colorbox({ iframe: true, innerWidth: 1240, innerHeight: 422 });
-// $('.d2').colorbox({ iframe: true, innerWidth: 1840, innerHeight: 800 });
-// $('.d3').colorbox({ iframe: true, innerWidth: 1075, innerHeight: 881 });
-// $('.d4').colorbox({ iframe: true, innerWidth: 548, innerHeight: 573 });
-// $('.d5').colorbox({ iframe: true, innerWidth: 1062, innerHeight: 796 });
-// $('.d6').colorbox({ iframe: true, innerWidth: 582, innerHeight: 834 });
-// $('.d7').colorbox({ iframe: true, innerWidth: 1393, innerHeight: 407 });
+const skills = [
+    { id: "skill-html", percent: 90, color: "#E34F26" },
+    { id: "skill-css", percent: 80, color: "#264DE4" },
+    { id: "skill-js", percent: 70, color: "#F0DB4F" },
+    { id: "skill-react", percent: 60, color: "#61DBFB" },
+    { id: "skill-ps", percent: 85, color: "#31A8FF" },
+    { id: "skill-ai", percent: 75, color: "#FF9A00" },
+    { id: "skill-figma", percent: 70, color: "#F24E1E" }
+];
 
-// skills 그래프로 출력
 function animateCircle(canvasId, targetPercent, color) {
     const canvas = document.getElementById(canvasId);
     if (!canvas || !canvas.getContext) return;
@@ -110,7 +224,6 @@ function animateCircle(canvasId, targetPercent, color) {
         // 진행 원
         const startAngle = -0.5 * Math.PI;
         const endAngle = startAngle + (percent / 100) * 2 * Math.PI;
-
         ctx.beginPath();
         ctx.arc(centerX, centerY, radius, startAngle, endAngle);
         ctx.strokeStyle = color;
@@ -128,12 +241,26 @@ function animateCircle(canvasId, targetPercent, color) {
     function animate() {
         draw(currentPercent);
         if (currentPercent < targetPercent) {
-            currentPercent += 1;
+            currentPercent++;
             requestAnimationFrame(animate);
         }
     }
+
     animate();
 }
+
+// IntersectionObserver로 SKILL 재진입 시 애니메이션 반복
+const skillObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            skills.forEach(skill => animateCircle(skill.id, skill.percent, skill.color));
+        }
+    });
+}, { threshold: 0.5 });
+
+const granphSection = document.querySelector(".SKILL .granph");
+if (granphSection) skillObserver.observe(granphSection);
+
 
 document.addEventListener('DOMContentLoaded', () => {
     animateCircle('skill-html', 80, '#e44d26');       // HTML

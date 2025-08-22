@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>권다은 | 포트폴리오</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/scrolloverflow.min.js"></script>
     <script src="fullPage/fullpage.js" defer></script>
     <script src="colorbox/jquery.colorbox.js"></script>
     <script src="index.js" defer></script>
@@ -63,18 +64,15 @@
 
     <div id="fullpage">
         <section class="HOME">
-            <h1 id="home-title">
-                <span>P</span><span>O</span><span>R</span><span>T</span><span>F</span><span>O</span><span>L</span><span>I</span><span>O</span>
-            </h1>
-            <p id="home-subtitle">
-                <span>안</span><span>녕</span><span>하</span><span>세</span><span>요</span><span>:)</span><span> </span>
-                <span>웹</span><span> </span><span>퍼</span><span>블</span><span>리</span><span>셔</span><span> </span>
-                <span>권</span><span>다</span><span>은</span><span>입</span><span>니</span><span>다</span><span>.</span>
-            </p>
+            <div class="home-content">
+                <h1 id="home-title">PORTFOLIO</h1>
+                <p id="home-subtitle">안녕하세요:) 웹 퍼블리셔 권다은입니다.</p>
+            </div>
         </section>
 
+
         <section class="ABOUTME">
-            <aside>
+            <aside class="left-box">
                 <div class="myImg">
                     <h1>ABOUT ME</h1>
                     <img src="img/myImg.jpg" alt="내 사진">
@@ -89,7 +87,7 @@
                     </ul>
                 </div>
             </aside>
-            <aside>
+            <aside class="right-box">
                 <div class="education">
                     <h1>EDUCATION</h1>
                     <ul>
@@ -104,6 +102,7 @@
                 </div>
             </aside>
         </section>
+
 
         <section class="SKILL">
             <div class="granph">
